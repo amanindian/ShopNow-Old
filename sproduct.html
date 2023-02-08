@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNow</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/2b7816211d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a class="icon" href="index.html">ShopNow.com</a>
+        <nav>
+            <ul id="openul">
+                <i class="fa-solid fa-circle-xmark" onclick="hidenav()" id="nav-hide"></i>
+                <li><a href="index.html">Home </a></li>
+                <li><a class="active" href="shop.html">Shop </a></li>
+                <li><a href="blog.html">Blog </a></li>
+                <li><a href="about.html">About </a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#"><i title="Cart" class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="opennav()" id="nav-open"></i>
+        </nav>
+    </header>
+
+
+
+    <section id="prodetails">
+        <div class="sing-product-image">
+            <img src="" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="single-pro-desc">
+            <h6>Home / T-shirt</h6>
+            <h4 id="about"></h4>
+            <h2 id="MainPrice"> </h2>
+            <select>
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1" name="" id="">
+            <button>Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam ipsa temporibus autem distinctio
+                tempore porro aperiam illo delectus neque itaque quidem, fugiat at! Obcaecati a magnam temporibus
+                blanditiis sequi! Commodi rerum et molestiae error ipsum, quos dolorem quod, ullam voluptas voluptatem
+                minus vel aut sed iste ab, vero voluptatum! Fugit.</span>
+        </div>
+    </section>
+
+
+    <section id="news">
+        <div class="news-text">
+            <h4>Sign Up for Newsletters</h4>
+            <p>Get E-mail updates about our letest shop and <span>Special offers</span></p>
+        </div>
+        <div class="news-form">
+            <input type="text" name="Email" placeholder="Enter your E-email address" id="">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="col">
+            <a class="icon" href="#">ShopNow.com</a>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Siwan, BIhar, India</p>
+            <p><strong>Phone:</strong>+918002579962</p>
+            <p><strong>Hours:</strong>10:00 - 18:00(Monday - Sunday)</p>
+            <h4>Follow</h4>
+            <div class="follow-icons">
+                <a target="_blank" href="https://www.linkedin.com/in/amanindian/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href="https://www.facebook.com/amankrindian/"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://twitter.com/amankrindian"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCMr7miKWktz7vXj7zydHBcQ"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a target="_blank" href="https://www.instagram.com/amankumar80025/"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Watchlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col">
+            <h4>Install App</h4>
+            <p>From App Stor or Google Play Store</p>
+            <div class="install-img">
+                <img src="img/pay/app.jpg" alt="Download from App Store">
+                <img src="img/pay/play.jpg" alt="Download from Google Play Store">
+            </div>
+            <p>Secure Payment Getway</p>
+            <img src="img/pay/pay.png" alt="Download from Google Play Store">
+        </div>
+    </footer>
+    <p id="copyright">
+        © 2022 ShopNow.com - HTML, CSS and JavaScript E-commerce template
+    </p>
+    <script src="script.js"></script>
+    <script>
+        let MainImg = document.getElementById(`MainImg`);
+        let MainPrice = document.getElementById(`MainPrice`);
+        let about = document.getElementById(`about`);
+        MainImg.src = localStorage.src
+        MainPrice.innerHTML = localStorage.MainPrice
+        about.innerHTML = localStorage.about
+
+        //Single Product Small Inages
+        let smallimg = document.getElementsByClassName(`small-img`)
+        smallimg[0].addEventListener(`click`, () => {
+            MainImg.src = smallimg[0].src
+        })
+        smallimg[1].onclick = () => {
+            MainImg.src = smallimg[1].src
+        }
+        smallimg[2].onclick = () => {
+            MainImg.src = smallimg[2].src
+        }
+        smallimg[3].onclick = () => {
+            MainImg.src = smallimg[3].src
+        }
+
+
+
+    </script>
+</body>
+
+</html>
