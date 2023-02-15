@@ -16,13 +16,13 @@ ShopNow offers a variety of features for online shopping, including:
 A user-friendly interface for browsing products  
 Product categories for easy navigation  
 A search bar to find specific products  
+Post your first Blog   
+About Us  
+Contact Us  
 <!-- The ability to add products to a shopping cart
 A shopping cart that displays the selected products and total price
 The ability to checkout and submit payment information 
 -->
-Post your first Blog   
-About Us  
-Contact Us  
 
 Usage   
 To use ShopNow, simply browse the various product categories, click on a product to view more details, and click the "Add to Cart" button to select a product. The shopping cart will display the selected products and the total price. When you are ready to checkout, click the "Checkout" button and submit your payment information.
