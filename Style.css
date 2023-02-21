@@ -27,7 +27,8 @@ h4 {
     font-size: 25px;
 }
 
-section, footer {
+section,
+footer {
     text-align: center;
     padding: 30px 50px;
 }
@@ -40,8 +41,6 @@ a {
 i {
     color: var(---navcol)
 }
-
-
 
 
 
@@ -59,7 +58,8 @@ header {
     z-index: 999;
 }
 
-#nav-open, #nav-hide {
+#nav-open,
+#nav-hide {
     display: none;
     cursor: pointer;
 }
@@ -494,7 +494,8 @@ li a:hover::after {
     font-size: 20px;
 }
 
-.col a:hover i, .col a:hover {
+.col a:hover i,
+.col a:hover {
     color: var(--hover);
 }
 
@@ -529,7 +530,8 @@ li a:hover::after {
     color: #fff;
 }
 
-#shop-header h2, #blog-header h2 {
+#shop-header h2,
+#blog-header h2 {
     margin: 10px;
 }
 
@@ -684,7 +686,9 @@ label {
     align-self: flex-start;
 }
 
-#Blog-title, #Blog-image, #Blog-description {
+#Blog-title,
+#Blog-image,
+#Blog-description {
     background: transparent;
     color: #fff;
     width: 100%;
@@ -745,7 +749,8 @@ label {
     font-size: 18px;
 }
 
-#about-head div p, #about-head div abbr {
+#about-head div p,
+#about-head div abbr {
     margin: 15px 0;
 }
 
@@ -826,7 +831,8 @@ label {
     margin: 10px 0;
 }
 
-#form-details form input, #form-details form textarea {
+#form-details form input,
+#form-details form textarea {
     border: 1px solid #000;
     resize: vertical;
     margin: 10px 0;
